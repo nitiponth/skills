@@ -1,0 +1,48 @@
+{
+  "revisions": {
+    "DietrichGebert/ponytail": "f3da910b4f2827aacbb9762e32db14f915d72194",
+    "michael-denyer/pstack-claude": "88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e"
+  },
+  "files": [
+    {
+      "repo": "DietrichGebert/ponytail",
+      "revision": "f3da910b4f2827aacbb9762e32db14f915d72194",
+      "path": "skills/ponytail/SKILL.md",
+      "role": "Adapted planning principles; matches the supplied Ponytail snapshot.",
+      "sha256": "1b9eaae4b639a2a6c311ad88a83e2bb0b38a612c17c84e8ac0b7603ec325604e",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/f3da910b4f2827aacbb9762e32db14f915d72194/skills/ponytail/SKILL.md"
+    },
+    {
+      "repo": "DietrichGebert/ponytail",
+      "revision": "f3da910b4f2827aacbb9762e32db14f915d72194",
+      "path": "LICENSE",
+      "role": "Preserved MIT notice.",
+      "sha256": "fb1bc6909ac3ef82d5c22106e32ef682b0cff66788fa915fb9b53b15c9d2f3ab",
+      "url": "https://raw.githubusercontent.com/DietrichGebert/ponytail/f3da910b4f2827aacbb9762e32db14f915d72194/LICENSE"
+    },
+    {
+      "repo": "michael-denyer/pstack-claude",
+      "revision": "88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e",
+      "path": "plugins/pstack/skills/poteto-mode/SKILL.md",
+      "role": "Composition reference only; its runtime and execution workflows are not bundled.",
+      "sha256": "3479bb0955b9ffa9dbd21a2ca4e04f04ff259ac2c3112beb171b1d84c6fdf389",
+      "url": "https://raw.githubusercontent.com/michael-denyer/pstack-claude/88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e/plugins/pstack/skills/poteto-mode/SKILL.md"
+    },
+    {
+      "repo": "michael-denyer/pstack-claude",
+      "revision": "88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e",
+      "path": "plugins/pstack/skills/unslop/SKILL.md",
+      "role": "Inspected external dependency; runtime uses the installed version.",
+      "sha256": "0503149a9b85dad02bbc747a3aeb534e2ba07f53c5fd57e491ea3d1e67659aa3",
+      "url": "https://raw.githubusercontent.com/michael-denyer/pstack-claude/88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e/plugins/pstack/skills/unslop/SKILL.md"
+    },
+    {
+      "repo": "michael-denyer/pstack-claude",
+      "revision": "88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e",
+      "path": "LICENSE",
+      "role": "Preserved MIT notice.",
+      "sha256": "5b1faca8cef6b7433b49c812c5e9e04bb1eb73b67171d67729983e0b46b9bb78",
+      "url": "https://raw.githubusercontent.com/michael-denyer/pstack-claude/88f6d39f228c4f9210d93bbf7e5e40a5c671fd5e/LICENSE"
+    }
+  ]
+}
