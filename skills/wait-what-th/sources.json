@@ -1,0 +1,43 @@
+{
+  "revisions": {
+    "mattpocock/skills": "5beb35b040e3de97e54fa9e386d7e42d15c295c2"
+  },
+  "files": [
+    {
+      "repo": "mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "path": "skills/productivity/wait-what/SKILL.md",
+      "role": "Adapted explicit re-pitch behavior and glossary conventions.",
+      "blob_sha": "9b15cd1a7dda0854ca093e29e3e0de57e241b2ac",
+      "sha256": "d961bb37defd975c539427edb8f450cdbccdcdd552e213c1ece46676a7970905",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/wait-what/SKILL.md"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "path": "skills/productivity/wait-what/agents/openai.yaml",
+      "role": "Adapted explicit-invocation UI metadata and policy.",
+      "blob_sha": "6f7a9c33f99ec4ba70d986d6fc0de06c8b811bc3",
+      "sha256": "b41faadf741d51e4ea184148b2d1854d93f947aaf754c7844f70a00f04194999",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/productivity/wait-what/agents/openai.yaml"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "path": "docs/productivity/wait-what.md",
+      "role": "Behavior reference for context recovery, glossary use, brevity, and repeated invocation.",
+      "blob_sha": "38384d7918b151f41ecf5fd731066e2f7c3c6e75",
+      "sha256": "2725483b1ba687fe31e2178e89d265a7ea34e51c88aeef9b6b6f35bfe0339fa8",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/5beb35b040e3de97e54fa9e386d7e42d15c295c2/docs/productivity/wait-what.md"
+    },
+    {
+      "repo": "mattpocock/skills",
+      "revision": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
+      "path": "LICENSE",
+      "role": "Preserved upstream MIT notice.",
+      "blob_sha": "f1dd2c09108dde1a5f56097cee8461b3ea834499",
+      "sha256": "0e7ac423bf2c6e223b7c5b156f8cf72da49d748e56a1641402c31f22ad07dbb5",
+      "url": "https://raw.githubusercontent.com/mattpocock/skills/5beb35b040e3de97e54fa9e386d7e42d15c295c2/LICENSE"
+    }
+  ]
+}

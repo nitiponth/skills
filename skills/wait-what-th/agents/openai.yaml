@@ -1,0 +1,5 @@
+interface:
+  display_name: "Wait What TH"
+  short_description: "อธิบายใหม่เป็นไทย พร้อม context ที่ขาด"
+policy:
+  allow_implicit_invocation: false

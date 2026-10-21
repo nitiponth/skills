@@ -1,0 +1,35 @@
+{
+  "revisions": {
+    "cursor/plugins": "99559f2f52047978602ef365589275831e76af07",
+    "anthropics/claude-plugins-official": "2a40fd2e7c52207aa903bd33fc4c65716126966e"
+  },
+  "files": [
+    {
+      "repo": "cursor/plugins",
+      "revision": "99559f2f52047978602ef365589275831e76af07",
+      "path": "pstack/skills/bro/SKILL.md",
+      "role": "Adapted one-shot, explicit assistant-message rewrite.",
+      "blob_sha": "b1701b778639c08bfc306291d70170c525c66a68",
+      "sha256": "aa329d0ceeeecb6822a7174ad76bb07a7826a3c52ceb6a588dec4138815084bb",
+      "url": "https://raw.githubusercontent.com/cursor/plugins/99559f2f52047978602ef365589275831e76af07/pstack/skills/bro/SKILL.md"
+    },
+    {
+      "repo": "cursor/plugins",
+      "revision": "99559f2f52047978602ef365589275831e76af07",
+      "path": "pstack/LICENSE",
+      "role": "Preserved upstream MIT notice.",
+      "blob_sha": "6b5400237fdf6545be0b8fae370d6f2fcff8fb25",
+      "sha256": "bc957ca6bee02792566a1a028d105e02e247c6e77cf057061674273da77b200e",
+      "url": "https://raw.githubusercontent.com/cursor/plugins/99559f2f52047978602ef365589275831e76af07/pstack/LICENSE"
+    },
+    {
+      "repo": "anthropics/claude-plugins-official",
+      "revision": "2a40fd2e7c52207aa903bd33fc4c65716126966e",
+      "path": "plugins/skill-creator/skills/skill-creator/SKILL.md",
+      "role": "Development guideline only; not bundled or required at runtime.",
+      "blob_sha": "65b3a402dbd09b8e83f9d637c6b553875189085c",
+      "sha256": "dcd4803e61e913e6fc27294184cd3a71f09f5e924ff20c8a9a20173e7b3c2bcf",
+      "url": "https://raw.githubusercontent.com/anthropics/claude-plugins-official/2a40fd2e7c52207aa903bd33fc4c65716126966e/plugins/skill-creator/skills/skill-creator/SKILL.md"
+    }
+  ]
+}

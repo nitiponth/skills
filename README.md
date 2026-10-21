@@ -4,6 +4,10 @@
 
 Use `to-plan` directly, or use `plan-stack` to coordinate it with Ponytail-derived scope checks and optional installed Unslop. The wrapper keeps the same two-document handoff and stops after planning.
 
+`bro-th` rewrites the assistant's last answer in concise, natural Thai while keeping familiar English technical and business terms. It preserves meaningful details and runs only when explicitly requested.
+
+`wait-what-th` re-pitches the current point when the conversation stops making sense. It restores the missing context in clear Thai, retains familiar English business and technical terms, and follows the project's glossary when available.
+
 ## Install
 
 Install the stack and its required core into your current project with the [Skills CLI](https://github.com/vercel-labs/skills):
@@ -19,6 +23,22 @@ For the standalone planning skill:
 ```sh
 npx skills add nitiponth/skills --skill to-plan
 ```
+
+For the Thai rewrite skill:
+
+```sh
+npx skills add nitiponth/skills --skill bro-th
+```
+
+To install local `bro-th` edits before publishing, run `npx skills add . --skill bro-th` from the repository root.
+
+For the Thai context-recovery skill:
+
+```sh
+npx skills add nitiponth/skills --skill wait-what-th
+```
+
+To install local `wait-what-th` edits before publishing, run `npx skills add . --skill wait-what-th` from the repository root.
 
 Add `--global` to install for your user account instead. The CLI lets you select which supported agents receive the skill.
 
@@ -65,6 +85,22 @@ The skill creates:
 
 The spec is the authority for behavior and scope. The plan supplies the implementation details and sequence. An unresolved product decision keeps the plan blocked. Plan readiness and authorization to implement are recorded separately.
 
+### Rewrite the last answer in Thai
+
+After an assistant answer, explicitly invoke `bro-th` using your agent's skill picker or command syntax, such as `$bro-th` in Codex or `/bro-th` in clients that support slash skills.
+
+The skill rewrites only that previous answer. It uses Thai sentence structure with English terms such as deploy, API, approval, and ROI, and briefly explains unfamiliar terms when needed. It removes repetition while retaining conclusions, reasons, conditions, uncertainty, and next steps. Code, commands, paths, URLs, and literal errors keep their original spelling. The response contains only the rewrite; later turns continue normally.
+
+For example, “Deployment is contingent on Security sign-off” becomes “จะ deploy ได้เมื่อทีม Security ให้ approval”.
+
+### Re-pitch missing context in Thai
+
+Invoke `wait-what-th` when you stop following the conversation, using `$wait-what-th` in Codex or `/wait-what-th` in clients that support slash skills.
+
+The skill can back up beyond the latest message to restore a missing premise. It writes short, direct Thai while keeping familiar business, technical, and project terms in English. When the repository has a `GLOSSARY.md`, it reuses those terms; `GLOSSARY-MAP.md` selects the relevant glossary when there is more than one. A missing glossary does not block the re-pitch.
+
+Code, commands, identifiers, paths, URLs, and literal error messages retain their exact spelling. The response contains only the new explanation, without a preface or duplicated English version.
+
 ## Implement in another session
 
 Give the receiving agent the repository, both documents, and the handoff at the end of `plan.md`. It checks the current code against the inspected revision, follows task dependencies, records progress and verification evidence, and supplies both documents plus the implementation-start revision to code review.
@@ -79,6 +115,10 @@ The original `to-plan` skill was evaluated on three small Python CLI planning ca
 
 Five additional isolated planning runs covered the same small change through both entrypoints, input validation with Unslop available, an unresolved product decision, and a missing core dependency. The checks inspected the generated handoffs and confirmed application files were unchanged. They do not establish a general quality or brevity improvement over standalone `to-plan`.
 
+`bro-th` was checked with three qualitative Codex examples covering technical instructions and executable text, business numbers and uncertainty, and mixed Thai/English with an earlier-message distractor. Those examples retained meaningful details and literal code while producing Thai prose with familiar English terms. Metadata and source notices were also checked. Live installation and invocation across clients were not tested.
+
+`wait-what-th` was checked against conversations with a missing premise, project glossary terms, and executable text. The checks cover context recovery, natural Thai with retained English domain terms, literal preservation, explicit invocation metadata, and source notices. They do not test native invocation in every supported client.
+
 ## Sources and license
 
 The skill adapts planning ideas from Matt Pocock's `to-spec` and `to-tickets`, and Jesse Vincent's Superpowers `writing-plans`. Anthropic's `skill-creator` supported development and evaluation; its tools are not bundled.
@@ -86,3 +126,7 @@ The skill adapts planning ideas from Matt Pocock's `to-spec` and `to-tickets`, a
 See [attribution](skills/to-plan/ATTRIBUTION.md), [pinned sources](skills/to-plan/sources.json), and [upstream MIT notices](skills/to-plan/LICENSES.txt). Original contributions are available under the [MIT license](LICENSE).
 
 `plan-stack` uses pstack's composition pattern as a reference and adapts planning rules from the pinned Ponytail revision. Unslop remains an external dependency. See the stack's [attribution](skills/plan-stack/ATTRIBUTION.md), [pinned sources](skills/plan-stack/sources.json), and [upstream MIT notices](skills/plan-stack/LICENSES.txt).
+
+`bro-th` adapts Lauren Tan's `bro` from `cursor/plugins`. Anthropic's `skill-creator` guided development; its tools are not bundled. See the skill's [attribution](skills/bro-th/ATTRIBUTION.md), [pinned sources](skills/bro-th/sources.json), and [upstream MIT notice](skills/bro-th/LICENSES.txt).
+
+`wait-what-th` adapts Matt Pocock's `wait-what` from `mattpocock/skills`. See the skill's [attribution](skills/wait-what-th/ATTRIBUTION.md), [pinned sources](skills/wait-what-th/sources.json), and [upstream MIT notice](skills/wait-what-th/LICENSES.txt).
