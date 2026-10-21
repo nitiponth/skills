@@ -1,6 +1,6 @@
-# to-plan
+# Skills
 
-Turn a software discussion, requirements, or an existing design into a portable `spec.md` and `plan.md` pair. The documents provide the context, decisions, task order, interfaces, and verification steps needed by an agent in a new session, with a handoff tailored to Matt Pocock's `implement` skill.
+`to-plan` turns a software discussion, requirements, or an existing design into a portable `spec.md` and `plan.md` pair. The documents provide the context, decisions, task order, interfaces, and verification steps needed by an agent in a new session, with a handoff tailored to Matt Pocock's `implement` skill.
 
 Use `to-plan` directly, or use `plan-stack` to coordinate it with Ponytail-derived scope checks and optional installed Unslop. The wrapper keeps the same two-document handoff and stops after planning.
 
@@ -9,7 +9,7 @@ Use `to-plan` directly, or use `plan-stack` to coordinate it with Ponytail-deriv
 Install the stack and its required core into your current project with the [Skills CLI](https://github.com/vercel-labs/skills):
 
 ```sh
-npx skills add nitiponth/to-plan --skill plan-stack --skill to-plan
+npx skills add nitiponth/skills --skill plan-stack --skill to-plan
 ```
 
 To install local edits before publishing, run `npx skills add . --skill plan-stack --skill to-plan` from the repository root.
@@ -17,7 +17,7 @@ To install local edits before publishing, run `npx skills add . --skill plan-sta
 For the standalone planning skill:
 
 ```sh
-npx skills add nitiponth/to-plan --skill to-plan
+npx skills add nitiponth/skills --skill to-plan
 ```
 
 Add `--global` to install for your user account instead. The CLI lets you select which supported agents receive the skill.
@@ -33,7 +33,7 @@ Ponytail does not need to be installed. Its planning principles are included in 
 To list the available skills without installing them:
 
 ```sh
-npx skills add nitiponth/to-plan --list
+npx skills add nitiponth/skills --list
 ```
 
 ## Use

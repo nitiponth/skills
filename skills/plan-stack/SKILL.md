@@ -18,7 +18,7 @@ source checkout, [../to-plan/SKILL.md](../to-plan/SKILL.md) is also a valid core
 if that file exists. Resolve the core's references relative to its own folder.
 
 If `to-plan` is unavailable, stop before creating planning documents. Report the
-missing dependency and provide `npx skills add nitiponth/to-plan --skill to-plan`
+missing dependency and provide `npx skills add nitiponth/skills --skill to-plan`
 as an installation instruction. Installation remains the user's action.
 
 If Unslop is absent or unreadable, continue with `to-plan` and disclose that both
