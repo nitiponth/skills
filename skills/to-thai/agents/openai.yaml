@@ -1,0 +1,5 @@
+interface:
+  display_name: "To Thai"
+  short_description: "แปลไทย คงศัพท์อังกฤษ เพิ่มคำอธิบายด้วย --explain"
+policy:
+  allow_implicit_invocation: false
